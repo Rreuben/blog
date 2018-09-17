@@ -21,7 +21,6 @@ class User(UserMixin, DB.Model):
     bio = DB.Column(DB.String(255))
     profile_pic_path = DB.Column(DB.String())
 
-    role_id = DB.Column(DB.Integer, DB.ForeignKey('roles.id'))
     blogs = DB.relationship('Blog', backref='user', lazy="dynamic")
     comments = DB.relationship('Comment', backref='user', lazy='dynamic')
 
@@ -38,16 +37,6 @@ class User(UserMixin, DB.Model):
 
     def __repr__(self):
         return f'{self.username}'
-
-
-class Role(DB.Model):
-
-    __tablename__ = 'roles'
-
-    id = DB.Column(DB.Integer, primary_key=True)
-    name = DB.Column(DB.String(255), index=True)
-
-    users = DB.relationship('User', backref='role', lazy='dynamic')
 
 
 class Blog(DB.Model):
