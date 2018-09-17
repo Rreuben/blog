@@ -94,7 +94,7 @@ def blogs():
     return render_template('pitches.html')
 
 
-@MAIN.route('/blogs/blogcomments/new/<int:id>', methods=['GET', 'POST'])
+@MAIN.route('/blogs/comments/new/<int:id>', methods=['GET', 'POST'])
 @login_required
 def new_comment(id):
 
