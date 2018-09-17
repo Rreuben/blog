@@ -75,10 +75,10 @@ Some features that are to come soon:
     Commenting and deleting posts
 
 #### Known Bugs
-The app is not yet deployable.
+Heroku is not picking up styling links. The navbar and footer will look weird on load up.
 
 ***
 
 <p align = "center">
-    <a href = "https://github.com/Rreuben/path_to_your_licence_file">LICENSE</a>
+    <a href = "https://github.com/Rreuben/blog/blob/master/LICENSE">LICENSE</a>
 </p>
