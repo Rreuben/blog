@@ -1,2 +1,33 @@
 {% extends 'base.html' %}
-{% import 'macros.html' as macro%}
+{% import 'macros.html' as macro %}
+
+{% block content %}
+
+<div class="container-fluid">
+  <div class="jumbotron">
+    <h1>Welcome To Personal-Blog!</h1>
+  </div>
+  <div class="row body">
+    <h4><a href="/categories/pitches/new/"><i class="fa fa-plus"></i> Add a post</a></h4> 
+  </div>
+  <div class="row">
+    <div class="footer">
+      <footer id="myFooter">
+        <div class="container">
+          <ul>
+            <li><a href="#">About</a></li><span class="bullelements">&bull;</span>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">© Personal-Blog 2018. All Rights Reserved.</p>
+        <div class="footer-social">
+          <a href="#" class="social-icons"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="social-icons"><i class="fa fa-google-plus"></i></a>
+          <a href="#" class="social-icons"><i class="fa fa-twitter"></i></a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
