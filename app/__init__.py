@@ -18,6 +18,7 @@ LOGIN_MANAGER.login_view = 'auth.login'
 PHOTOS = UploadSet('photos', IMAGES)
 MAIL = Mail()
 
+
 def create_app(config_name):
 
     app = Flask(__name__)
