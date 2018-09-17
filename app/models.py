@@ -74,7 +74,7 @@ class Comment(DB.Model):
     id = DB.Column(DB.Integer, primary_key=True)
     body = DB.Column(DB.String(250))
 
-    post_id = DB.Column(DB.Integer, DB.ForeignKey("posts.id"))
+    blog_id = DB.Column(DB.Integer, DB.ForeignKey("blogs.id"))
     user_id = DB.Column(DB.Integer, DB.ForeignKey("users.id"))
 
     def save_comments(self):
